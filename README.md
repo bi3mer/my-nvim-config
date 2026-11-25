@@ -1,0 +1,3 @@
+# My `nvim` Config
+
+This is a poorly named repo. I'm using [Neovim](https://neovim.io/) for writing [LaTeX](https://www.latex-project.org/), and this config is specifically for that and nothing else. So, if you want to see what I use to write LaTex, you've come to the right place. If you want to see what I use when I program, you aren't in the right place, but I'll tell you anyways. I use [Zed](https://zed.dev/) with vim keybindings.
