@@ -46,5 +46,19 @@ vim.api.nvim_create_autocmd('FileType', {
   end,
 })
 
+-- Spell check for prose files
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'tex', 'markdown' },
+  callback = function()
+    vim.opt_local.spell = true
+    vim.opt_local.spelllang = 'en_us'
+  end,
+})
+
+-- Share yank/delete/paste with the system clipboard (macOS and Linux)
+vim.o.clipboard = 'unnamedplus'
+
 -- custom keybindings
 vim.keymap.set('n', '<leader>e', '<cmd>edit .<cr>', { desc = 'Open project explorer' })
+vim.keymap.set('n', '<leader>b', '<C-^>', { desc = 'Go back to previous file' })
+vim.keymap.set('n', '<leader>c', 'z=', { desc = 'Correct spelling under cursor' })

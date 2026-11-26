@@ -11,7 +11,7 @@ case "$(uname -s)" in
     ;;
   Linux)
     sudo apt-get update
-    sudo apt-get install -y git latexmk texlive-latex-extra texlive-bibtex-extra biber zathura
+    sudo apt-get install -y git latexmk texlive-latex-extra texlive-bibtex-extra biber zathura wl-clipboard xclip
     sudo snap install nvim --classic
     ;;
   *)
